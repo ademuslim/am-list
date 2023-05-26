@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AM List</string>
+    <string name="nama_hint">Nama Lengkap.</string>
+    <string name="sandi_hint">Sandi.</string>
+    <string name="uncheckbutton">UnCheckButton</string>
+    <string name="name_app">AM List</string>
+    <string name="list1">Kuliah</string>
+    <string name="username_log">Ade Muslim</string>
+    <string name="time1">07:00</string>
+    <string name="dark_mode_icon">Dark mode icon</string>
+    <string name="list2">Kumpul komunitas java</string>
+    <string name="list3">Futsal temen kantor</string>
+    <string name="time2">19:00</string>
+    <string name="time3">21:00</string>
+    <string name="add_list_icon">Add list icon</string>
+    <string name="notif_icon">Notif icon</string>
+    <string name="logo_app">Logo app</string>
+    <string name="sub_judul">AM List</string>
+    <string name="gambar_pola_title">Gambar Pola</string>
+    <string name="lupa_pola_text">Lupa Pola</string>
+    <string name="lupa_pola_icon">Lupa pola icon</string>
+    <string name="pola_image">Pola</string>
+    <string name="icon">Icon</string>
+    <string name="alert_01">Alert 01</string>
+    <string name="alert_02">Alert 02</string>
+    <string name="alert_03">Alert 03</string>
+    <string name="alert_04">Alert 04</string>
+</resources>

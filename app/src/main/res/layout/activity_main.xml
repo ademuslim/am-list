@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000D6B"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/amlistLogoImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/amlist"
+        android:contentDescription="@string/logo_app" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        android:contentDescription="@string/name_app"
+        android:text="@string/name_app"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/amlistLogoImageView"
+        app:layout_constraintTop_toTopOf="@+id/amlistLogoImageView" />
+
+    <TextView
+        android:id="@+id/subJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="22dp"
+        android:contentDescription="@string/username_log"
+        android:text="@string/username_log"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/amlistLogoImageView"
+        app:layout_constraintStart_toEndOf="@+id/amlistLogoImageView" />
+
+    <ImageButton
+        android:id="@+id/toggleImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="22dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/dark_mode_icon"
+        android:src="@drawable/toggle_60dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/checkImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/uncheckbutton"
+        android:src="@drawable/check_circle_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amlistLogoImageView"
+         />
+
+    <TextView
+        android:id="@+id/ListTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/list1"
+        android:text="@string/list1"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkImageButton"
+        app:layout_constraintStart_toEndOf="@+id/checkImageButton" />
+
+    <View
+        android:id="@+id/lineView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="22dp"
+        android:background="#66FF008E"
+        app:layout_constraintBottom_toBottomOf="@+id/checkImageButton"
+        app:layout_constraintEnd_toStartOf="@+id/timeTextView1"
+        app:layout_constraintStart_toEndOf="@+id/checkImageButton"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/timeTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/time1"
+        android:textColor="#FF008E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lineView1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/ListTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="12dp"
+
+        android:text="@string/list2"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/unCheckImageButton1"
+        app:layout_constraintStart_toEndOf="@+id/unCheckImageButton1" />
+
+    <ImageButton
+        android:id="@+id/unCheckImageButton1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/uncheckbutton"
+        android:src="@drawable/outline_circle_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkImageButton" />
+
+    <View
+        android:id="@+id/lineView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="22dp"
+        android:background="#66FF008E"
+        app:layout_constraintBottom_toBottomOf="@+id/unCheckImageButton1"
+        app:layout_constraintEnd_toStartOf="@+id/timeTextView1"
+        app:layout_constraintStart_toEndOf="@+id/checkImageButton"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/timeTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/time2"
+        android:textColor="#FF008E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lineView2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/unCheckImageButton2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/uncheckbutton"
+        android:src="@drawable/outline_circle_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unCheckImageButton1" />
+
+    <TextView
+        android:id="@+id/ListTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/list3"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/unCheckImageButton2"
+        app:layout_constraintStart_toEndOf="@+id/unCheckImageButton2" />
+
+    <View
+        android:id="@+id/lineView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="22dp"
+        android:background="#66FF008E"
+        app:layout_constraintBottom_toBottomOf="@+id/unCheckImageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/timeTextView1"
+        app:layout_constraintStart_toEndOf="@+id/checkImageButton"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/timeTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/time3"
+        android:textColor="#FF008E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lineView3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/addListImageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="22dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/add_list_icon"
+        android:src="@drawable/add_circle_65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/editNotificationImageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="22dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/notif_icon"
+        android:src="@drawable/edit_notifications_50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

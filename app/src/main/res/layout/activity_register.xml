@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000D6B"
+    android:orientation="horizontal"
+    tools:context=".Auth">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/amlist" />
+
+    <TextView
+        android:id="@+id/salam"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="Selamat Datang."
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <TextView
+        android:id="@+id/inputNamaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siapa Nama Anda?"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/namaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/rename_24dp"
+        android:drawablePadding="12dp"
+        android:hint="@string/nama_hint"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:textColorHint="#BA68C8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/inputNamaTextView"
+        app:layout_constraintTop_toBottomOf="@+id/inputNamaTextView" />
+
+    <EditText
+        android:id="@+id/sandiEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/lock_24dp"
+        android:drawablePadding="12dp"
+        android:hint="@string/sandi_hint"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:textColorHint="#BA68C8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/inputNamaTextView"
+        app:layout_constraintTop_toBottomOf="@+id/buatSandiTextView" />
+
+    <TextView
+        android:id="@+id/buatSandiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Buat Sandi"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namaEditText" />
+
+    <ImageButton
+        android:id="@+id/lupaPolaImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/sync_lock_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/lupaPolaTextView"
+        app:layout_constraintTop_toBottomOf="@+id/sandiEditText" />
+
+    <TextView
+        android:id="@+id/lupaPolaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="60dp"
+        android:text="Kunci Layar"
+        android:textColor="#FF4081"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandiEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
